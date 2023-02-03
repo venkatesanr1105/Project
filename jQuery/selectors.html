@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Selectors</title>
+    <script src="jQuery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <h1>Heading 1</h1>
+    <h2 id = "heading">Heading 2</h2>
+    <h3 class = "heading">Heading 3</h3>
+    <h4 class = "heading">Heading 4</h4>
+    <script type="text/javascript">
+      $(function(){
+        $("h1").click(function(){
+          $(this).hide();
+        });
+
+        $("#heading").click(function(){
+          $(this).hide();
+        });
+
+        $(".heading").click(function(){
+          $(this).hide();
+        });
+      })
+    </script>
+  </body>
+</html>
